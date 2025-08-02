@@ -1,12 +1,93 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lana Del Rey - Concert Ticket Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
 <body>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="glass hero">
+      <img class="hero-img" src="https://www.lanadelreyfan.com/gallery/albums/userpics/10002/normal_6m59f.jpg"
+        alt="Lana Del Rey">
+      <div class="hero-content">
+        <h1 class="hero-title">Lana Del Rey</h1>
+        <p class="hero-subtitle">Live in Concert</p>
+        <p class="hero-date"><span>August 24, 2025</span> &middot; <span>Madison Square Garden, NYC</span></p>
+        <a href="#tickets" class="btn-glass hero-btn"><span>Book Tickets</span></a>
+      </div>
+    </section>
 
-<h2>HTML Links</h2>
-<p>HTML links are defined with the a tag:</p>
+    <section class="glass ticket-card" id="tickets">
+      <div class="card-header">
+        <span class="icon" style="background: linear-gradient(135deg, #ffb347, #ffcc33);">
+          🎟️
+        </span>
+        <h2 class="card-title">Book Your Tickets</h2>
+      </div>
+      <form class="ticket-form">
+        <label>
+          Ticket Type
+          <div class="custom-select">
+            <div class="select-trigger">
+              <span>General Admission - $99</span>
+            </div>
+            <div class="custom-options">
+              <div class="custom-option selected" data-value="general">General Admission - $99</div>
+              <div class="custom-option" data-value="vip">VIP - $199</div>
+              <div class="custom-option" data-value="golden">Golden Circle - $299</div>
+            </div>
+            <select style="display: none;">
+              <option value="general">General Admission - $99</option>
+              <option value="vip">VIP - $199</option>
+              <option value="golden">Golden Circle - $299</option>
+            </select>
+          </div>
+        </label>
+        <label>
+          Quantity
+          <input type="number" min="1" max="10" value="1">
+        </label>
+        <button type="submit" class="btn-glass"><span>Proceed to Payment</span></button>
+      </form>
+    </section>
 
-<a href="https://www.w3schools.com">This is a link</a>
+    <!-- Event Details Card -->
+    <section class="glass details-card">
+      <div class="card-header">
+        <span class="icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+          📅
+        </span>
+        <h2 class="card-title">Event Details</h2>
+      </div>
+      <div class="card-content">
+        <ul class="event-details-list">
+          <li><strong>Date:</strong> August 24, 2025</li>
+          <li><strong>Time:</strong> 7:00 PM</li>
+          <li><strong>Venue:</strong> Madison Square Garden, NYC</li>
+          <li><strong>Special Guest:</strong> TBA</li>
+        </ul>
+        <div class="card-content-grid">
+          <div>
+            <h3 class="card-subtitle">About Lana Del Rey</h3>
+            <p>Lana Del Rey is an American singer-songwriter known for her cinematic music style and melancholic themes.
+              Experience her enchanting vocals live!</p>
+          </div>
+          <div>
+            <img class="about-img" src="https://www.lanadelreyfan.com/gallery/albums/userpics/10002/normal_6m59f.jpg"
+              alt="Lana Del Rey Portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <script src="script.js"></script>
 </body>
-</html>
 
+</html>
